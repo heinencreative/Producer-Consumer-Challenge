@@ -1,0 +1,26 @@
+{
+  "name": "producer-consumer",
+  "version": "0.0.0",
+  "description": "Bounded Buffer Problem example",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "producer": "node producer.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heinencreative/producer-consumer-challenge"
+  },
+  "author": "Chris Heinen <chris@heinencreative.com>",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "~1.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.1.0",
+    "mocha": "^2.2.5",
+    "sinon": "^1.15.4",
+    "sinon-chai": "^2.8.0"
+  }
+}
