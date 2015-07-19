@@ -20,3 +20,18 @@ The end product should:
 * NOT use Express (Connect is Ok)
 * Include UML Activity Diagram and UML Sequence Diagram documenting the business logic
 * Include Unit tests
+
+----
+
+## Installation
+
+1. `$ git clone git@github.com:heinencreative/producer-consumer-challenge.git && cd producer-consumer-challenge`
+2. `$ npm install`
+
+## Execute Challenge
+
+Once installed, you must start each NodeJS service in a separate terminal window. Execute the following in this order:
+
+1. `$ npm start`
+2. `$ npm run producer`
+3. `$ npm run producer`
