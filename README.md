@@ -35,3 +35,11 @@ Once installed, you must start each NodeJS service in a separate terminal window
 1. `$ npm start`
 2. `$ npm run producer`
 3. `$ npm run producer`
+
+----
+
+## Testing ##
+
+Unit testing is accomplished using Mocha, Chai and Sinon. To run tests simply execute:
+
+`$ npm test`
