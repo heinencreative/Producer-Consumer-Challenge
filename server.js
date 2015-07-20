@@ -48,8 +48,26 @@ function requestHandler(req,res) {
             return;
         }
 
-        // TODO this is a temporary response, replace with actual calculation
-        res.end(JSON.stringify({status:"success"}));
+        // Try to calculate the answer of the expression
+        try {
+            var answer = calc.calculate(parsed[0],parsed[1],parsed[2]);
+            result.status = 'success';
+            result.data = {};
+            result.data.expression = requestObj.expression;
+            result.data.answer = answer;
+            helper.log('Response: '+JSON.stringify(result));
+            res.setHeader('Content-Type', 'application/json');
+            res.end(JSON.stringify(result));
+            return;
+        } catch(err) {
+            result.status = 'fail';
+            result.data = {};
+            result.data.expression = err.message;
+            helper.log('Response: '+JSON.stringify(result));
+            res.statusCode = 400;
+            res.end(JSON.stringify(result));
+            return;
+        }
     });
 }
 

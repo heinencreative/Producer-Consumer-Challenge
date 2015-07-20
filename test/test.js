@@ -81,4 +81,34 @@ describe('Calc',function(){
       assert(isInt, 'not a float: ' + result);
     });
   });
+  describe('#calculate()',function(){
+    it('should return correct answer to addition expression', function() {
+      var parsed = [2,'+',3];
+      var result = calc.calculate(parsed[0],parsed[1],parsed[2]);
+      expect(result).to.equal(5);
+    });
+    it('should return correct answer to subtraction expression', function() {
+      var parsed = [2,'-',3];
+      var result = calc.calculate(parsed[0],parsed[1],parsed[2]);
+      expect(result).to.equal(-1);
+    });
+    it('should return correct answer to multiplication expression', function() {
+      var parsed = [2,'*',3];
+      var result = calc.calculate(parsed[0],parsed[1],parsed[2]);
+      expect(result).to.equal(6);
+    });
+    it('should return correct answer to division expression', function() {
+      var parsed = [6,'/',3];
+      var result = calc.calculate(parsed[0],parsed[1],parsed[2]);
+      expect(result).to.equal(2);
+    });
+    it('should return an error for division by zero', function(){
+      var parsed = [2,'/',0];
+      expect(function() { calc.calculate(parsed[0],parsed[1],parsed[2]); }).to.throw('Division by zero not allowed.');
+    });
+    it('should return an error for invalid operator', function(){
+      var parsed = [2,'#',0];
+      expect(function() { calc.calculate(parsed[0],parsed[1],parsed[2]); }).to.throw('Invalid operator.');
+    });
+  });
 });

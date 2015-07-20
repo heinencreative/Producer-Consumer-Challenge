@@ -36,6 +36,26 @@ Once installed, you must start each NodeJS service in a separate terminal window
 2. `$ npm run producer`
 3. `$ npm run producer`
 
+### Bonus ###
+
+The NodeJS services above also accept arguments. Intead of using the NPM build described in the Execute Challenge section, you can execute them manually.
+
+#### server.js ####
+
+`$ node server --port=1337`
+
+* **--port** Set port number (Integer)
+
+#### generator.js ####
+
+`$ node generator.js --port=1337 --integer=false --lowerLimit=900 --upperLimit=1000 --requestDelay=250`
+
+* **--port** Set port number (Integer)
+* **--integer** Force numbers in expression to be integers (Boolean)
+* **--lowerLimit** Set lower limit of random numbers (Integer)
+* **--upperLimit** Set upper limit of random numbers (Integer)
+* **--requestDelay** Adjust milisecond delay between requests (Integer)
+
 ----
 
 ## Testing ##
