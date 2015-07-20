@@ -23,6 +23,18 @@ The end product should:
 
 ----
 
+## UML Diagrams ##
+
+### Activty Diagram ###
+
+![UML Activity Diagram](https://github.com/heinencreative/producer-consumer-challenge/raw/master/assets/images/producer_consumer_activity_diagram.png "UML Activity Diagram")
+
+### Sequence Diagram ###
+
+![UML Sequence Diagram](https://github.com/heinencreative/producer-consumer-challenge/raw/master/assets/images/producer_consumer_sequence.png "UML Sequence Diagram")
+
+----
+
 ## Installation
 
 1. `$ git clone git@github.com:heinencreative/producer-consumer-challenge.git && cd producer-consumer-challenge`
@@ -66,12 +78,6 @@ Unit testing is accomplished using Mocha, Chai and Sinon. To run tests simply ex
 
 ----
 
-## UML Diagrams ##
+## License
 
-### Activty Diagram ###
-
-![UML Activity Diagram](https://github.com/heinencreative/producer-consumer-challenge/raw/master/assets/images/producer_consumer_activity_diagram.png "UML Activity Diagram")
-
-### Sequence Diagram ###
-
-![UML Sequence Diagram](https://github.com/heinencreative/producer-consumer-challenge/raw/master/assets/images/producer_consumer_sequence.png "UML Sequence Diagram")
+This challenge is released under the [MIT License](http://www.opensource.org/licenses/MIT).
