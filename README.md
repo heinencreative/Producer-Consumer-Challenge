@@ -63,3 +63,15 @@ The NodeJS services above also accept arguments. Intead of using the NPM build d
 Unit testing is accomplished using Mocha, Chai and Sinon. To run tests simply execute:
 
 `$ npm test`
+
+----
+
+## UML Diagrams ##
+
+### Activty Diagram ###
+
+![UML Activity Diagram](https://github.com/heinencreative/producer-consumer-challenge/raw/master/assets/images/producer_consumer_activity_diagram.png "UML Activity Diagram")
+
+### Sequence Diagram ###
+
+![UML Sequence Diagram](https://github.com/heinencreative/producer-consumer-challenge/raw/master/assets/images/producer_consumer_sequence.png "UML Sequence Diagram")
