@@ -58,9 +58,9 @@ The NodeJS services above also accept arguments. Intead of using the NPM build d
 
 * **--port** Set port number (Integer)
 
-#### generator.js ####
+#### producer.js ####
 
-`$ node generator.js --port=1337 --integer=false --lowerLimit=900 --upperLimit=1000 --requestDelay=250`
+`$ node producer.js --port=1337 --integer=false --lowerLimit=900 --upperLimit=1000 --requestDelay=250`
 
 * **--port** Set port number (Integer)
 * **--integer** Force numbers in expression to be integers (Boolean)
