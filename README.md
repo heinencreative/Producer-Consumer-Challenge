@@ -1,4 +1,4 @@
-# Producer/Consumer System Challenge #
+# Producer/Consumer System Challenge
 
 The assignment is to build a simple Producer/Consumer system. In this system the Generator will send a series of random arithmetic expressions, while the Evaluator will accept these expressions, compute the result and then report the solution to the Generator.
 
@@ -23,13 +23,13 @@ The end product should:
 
 ----
 
-## UML Diagrams ##
+## UML Diagrams
 
-### Activty Diagram ###
+### Activty Diagram
 
 ![UML Activity Diagram](https://github.com/heinencreative/producer-consumer-challenge/raw/master/assets/images/producer_consumer_activity_diagram.png "UML Activity Diagram")
 
-### Sequence Diagram ###
+### Sequence Diagram
 
 ![UML Sequence Diagram](https://github.com/heinencreative/producer-consumer-challenge/raw/master/assets/images/producer_consumer_sequence.png "UML Sequence Diagram")
 
@@ -40,7 +40,7 @@ The end product should:
 1. `$ git clone git@github.com:heinencreative/producer-consumer-challenge.git && cd producer-consumer-challenge`
 2. `$ npm install`
 
-## Execute Challenge
+## Running the Challenge
 
 Once installed, you must start each NodeJS service in a separate terminal window. Execute the following in this order:
 
@@ -48,17 +48,17 @@ Once installed, you must start each NodeJS service in a separate terminal window
 2. `$ npm run producer`
 3. `$ npm run producer`
 
-### Bonus ###
+### Bonus
 
 The NodeJS services above also accept arguments. Intead of using the NPM build described in the Execute Challenge section, you can execute them manually.
 
-#### server.js ####
+#### server.js
 
 `$ node server --port=1337`
 
 * **--port** Set port number (Integer)
 
-#### producer.js ####
+#### producer.js
 
 `$ node producer.js --port=1337 --integer=false --lowerLimit=900 --upperLimit=1000 --requestDelay=250`
 
@@ -70,7 +70,7 @@ The NodeJS services above also accept arguments. Intead of using the NPM build d
 
 ----
 
-## Testing ##
+## Testing
 
 Unit testing is accomplished using Mocha, Chai and Sinon. To run tests simply execute:
 
