@@ -18,7 +18,7 @@ var t = setInterval(function(){
         var expression = '';
         // Build a mathmatical expression from random numbers and operator
         expression = calc.randomNumber(lowerLimit,upperLimit,integer);
-        expression += calc.operators[calc.randomNumber(0,3,true)];
+        expression += calc.operators[Math.floor(Math.random() * 4)];
         expression += calc.randomNumber(lowerLimit,upperLimit,integer);
         expression += '=';
 
@@ -26,7 +26,7 @@ var t = setInterval(function(){
         postExpression(expression);
       },requestDelay);
 
-// Build and send a POST request containing json JSON. For example, {'expression','1+2='}
+// Build and send a POST request containing JSON. For example, {'expression':'1+2='}
 function postExpression(expression) {
   // JSON data to be sent
   var postData = JSON.stringify({
